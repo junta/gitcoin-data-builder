@@ -49,7 +49,7 @@ const mainFunc = async () => {
   for (record of parsedData) {
     console.log(record.index);
 
-    // if (record.index < 22100) continue;
+    if (record.index < 27400) continue;
 
     try {
       const passport = await readPassport(record.address);
